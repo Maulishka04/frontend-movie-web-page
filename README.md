@@ -28,6 +28,7 @@ A modern and interactive **Movie Explorer** web application that allows users to
 ![Screenshot_15-8-2025_141737_](https://github.com/user-attachments/assets/3d049939-07dd-4f21-8114-375547c38fb3)
 
 **Demo Video Of the Web Application**
+
 ![Movie app Demo - Made with Clipchamp](https://github.com/user-attachments/assets/fbab6d94-dc02-4645-9473-86e3a5a2ec7d)
 
 Example:
