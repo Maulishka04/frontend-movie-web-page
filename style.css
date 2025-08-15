@@ -1,0 +1,263 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #131720, #1f2a3a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* Headings */
+h3 {
+    color: white;
+}
+
+/* Top Navigation */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    color: gold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav .search-container form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    transition: all 03s ease;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.topnav input {
+    all: unset;
+    font-size: 1rem;
+    color: white;
+    width: 200px;
+}
+
+.topnav input:focus {
+    width: 250px;
+    border-bottom: 2px solid gold;
+}
+
+form {
+    background-color: #151f30;
+    width: 100%;
+    max-width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    font: 15px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+/* Card Thumbnail */
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#section {
+    display: flex;         /* or keep grid if you prefer */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;         /* space inside container */
+    justify-content: flex-start;
+    overflow-x: hidden; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 15px; /* Space from left & right edges */
+}
+
+.column {
+    flex: 1 1 180px;    /* Responsive min width */
+    max-width: 220px;   /* Optional max width */
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(28, 28, 43, 0.95);
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Star Rating */
+.star-rating {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: gold;
+    position: relative;
+}
+
+.star-rating::before {
+    content: "★★★★★";
+    opacity: 0.3;
+}
+
+.star-rating span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: gold;
+    text-shadow: 0 0 5px gold;
+}
+
+/* Rating under poster */
+.rating {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    color: gold;
+}
+
+/* Load More Button */
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.load-more:hover {
+    background: orange;
+}
+
+/* Spinner */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: gold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+    margin: 50px auto;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Details Page Layout */
+#movie-details {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(28, 43, 58, 0.95);
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#movie-details img {
+    max-width: 300px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#movie-details img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+#movie-info {
+    flex: 1;
+}
+
+#movie-info h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+#movie-info p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#movie-info strong {
+    color: #ffcc00;
+}
+
+/* Genre Tags */
+.genre-tag {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin: 3px;
+    font-weight: bold;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
