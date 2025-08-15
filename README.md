@@ -79,6 +79,7 @@ movies-web-app/
 ├─ index.html        # Homepage
 ├─ details.html      # Movie details page
 ├─ script.js         # JavaScript for fetching and displaying movies
+├─ details.js        # JavaScript for fetching and displaying movies details
 └─ style.css         # Styling for homepage and details page
 ```
 
