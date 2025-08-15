@@ -23,8 +23,11 @@ A modern and interactive **Movie Explorer** web application that allows users to
 
 ## 🖼️ Demo
 **Homepage**
+
 ![Screenshot_15-8-2025_14171_](https://github.com/user-attachments/assets/2f352b3d-b8e7-44f9-b4ee-22c3b922d6ec)
+
 **Details Page**
+
 ![Screenshot_15-8-2025_141737_](https://github.com/user-attachments/assets/3d049939-07dd-4f21-8114-375547c38fb3)
 
 **Demo Video Of the Web Application**
